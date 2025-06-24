@@ -1,0 +1,123 @@
+.course-progress {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.progress-header h4 {
+  margin: 0;
+  color: #333;
+}
+
+.progress-percentage {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.progress-bar-container {
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.syllabus-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.syllabus-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.syllabus-item.completed {
+  background: #e8f5e9;
+}
+
+.syllabus-item.current {
+  background: #fff3e0;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.section-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.section-status {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.tick-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.tick-button:hover:not(:disabled) {
+  border-color: #4CAF50;
+  background: #f1f8e9;
+}
+
+.tick-button.completed {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+.tick-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.tick-button i {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .section-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .section-status {
+    font-size: 0.75rem;
+  }
+} 

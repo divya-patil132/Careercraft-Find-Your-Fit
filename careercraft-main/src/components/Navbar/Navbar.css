@@ -1,0 +1,141 @@
+:root {
+  /* Primary Purple Colors */
+  --primary-purple: #6B46C1;
+  --primary-purple-dark: #553C9A;
+  --primary-purple-light: #9F7AEA;
+  --primary-purple-lighter: #E9D8FD;
+  
+  /* Background Colors */
+  --bg-purple-50: #FAF5FF;
+  --bg-purple-100: #F3E8FF;
+  --bg-purple-200: #E9D5FF;
+  
+  /* Text Colors */
+  --text-dark: #2D3748;
+  --text-medium: #4A5568;
+  --text-light: #718096;
+  
+  /* Accent Colors */
+  --accent-success: #48BB78;
+  --accent-error: #F56565;
+  --accent-warning: #ECC94B;
+}
+
+.navbar {
+  background-color: var(--bg-purple-50);
+  box-shadow: 0 2px 4px rgba(107, 70, 193, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-medium);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-purple);
+}
+
+.google-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.google-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.login-btn {
+  background-color: white;
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--primary-purple);
+  color: white;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 0.75rem;
+  margin: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-email {
+  color: var(--text-medium);
+  font-size: 0.875rem;
+}
+
+.logout-btn {
+  background-color: var(--accent-error);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #DC2626;
+} 
